@@ -1,4 +1,4 @@
-# Storage-Mounting(NFS and SAN)
+# Storage(NFS and SAN)
 
 ## NFS
 1.	On NFS Server(source), run below:
