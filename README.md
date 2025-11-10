@@ -8,7 +8,8 @@ c.	Run `exportfs -a` which will add entry in file `/var/lib/nfs/etab`
 d.	`systemctl start nfs-server`
 e.	`systemctl enable nfs-server`
 f.	`systemctl status nfs-server`
-2.	On NFS Client(destination), run below:
+g. You can run `exportfs -r` to reload in case some changes have been done in `/etc/exports`
+3.	On NFS Client(destination), run below:
 a. `yum install nfs-utils`
 b. `mount -t nfs SOURCE_IP:/source/path /destination/path`
 c.	To permanently mount even after reboot, edit `/etc/fstab` file and add `SOURCE_IP:/source/path /destination/path nfs defaults 0 0`
