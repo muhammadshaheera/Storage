@@ -25,3 +25,10 @@ d. Format and mount: `lsblk` to Find the new disk (e.g., /dev/sdb), `mkfs.ext4 /
 e. To automate iSCSI login run `iscsiadm -m node -T IQN(iSCSI_Qualified_Name):VOLUME_NAME -p SAN_STORAGE_SERVER_IP --op update -n node.startup -v automatic`
 f. To permanently mount even after reboot, edit `/etc/fstab` file and add `/dev/sdb /destination/path ext4  defaults  0  0`
 g. `umount /destination/path` OR `umount -l /destination/path`(in case there is issue in mount point)
+SAN Configuration on Dell EqualLogic PS6000
+<img width="1920" height="1019" alt="1" src="https://github.com/user-attachments/assets/f5f7aa9e-d6c4-4aff-b947-c5f02e829273" />
+<img width="1920" height="1013" alt="2" src="https://github.com/user-attachments/assets/b8a2c984-a69d-4883-9bc5-ddb338c3974c" />
+
+SAN Testing on Localy created CentOS9 VM
+![3](https://github.com/user-attachments/assets/316a2fce-adc7-44e5-9ca5-315905624a37)
+![4](https://github.com/user-attachments/assets/070d94e6-a1c1-49bf-955d-9c0726ec55bd)
